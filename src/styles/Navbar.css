@@ -1,0 +1,60 @@
+/* Container styling */
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem 2rem;
+background: linear-gradient(to bottom, #fef3c7, #fde68a);
+border-radius: 2rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.logoHolder {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.logoHolder img {
+  height: 50px;
+  width: auto;
+  cursor: pointer;
+}
+
+/* Links container */
+.links {
+  display: flex;
+  gap: 2rem;
+}
+
+/* Individual link styles */
+.links a {
+  color: #1f2937;
+  cursor: pointer;
+  text-decoration: none;
+  font-weight: 600;
+  transition: color 0.3s ease;
+}
+
+.links a:hover {
+  color: #cc4f4f; /* Tailwind blue-500 */
+}
+
+/* Responsive for mobile */
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .links {
+    flex-direction: column;
+    width: 100%;
+    gap: 1rem;
+    margin-top: 1rem;
+  }
+
+  .links a {
+    font-size: 1.2rem;
+  }
+}
